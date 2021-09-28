@@ -1,0 +1,87 @@
+
+{
+	"buildFiles" : [ "D:/AndroidProjects/LivePush/app/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"D:\\AndroidDevelop\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProjects\\LivePush\\app\\.cxx\\cmake\\debug\\arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"live-push-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "live-push",
+			"buildCommand" : "D:\\AndroidDevelop\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProjects\\LivePush\\app\\.cxx\\cmake\\debug\\arm64-v8a --target live-push",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot  -Dlive_push_EXPORTS -isystem D:\\AndroidDevelop\\android-sdk\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\AndroidDevelop\\android-sdk\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/AndroidProjects/LivePush/app/src/main/cpp/DZJNICall.cpp",
+					"workingDirectory" : "D:/AndroidProjects/LivePush/app/.cxx/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot  -Dlive_push_EXPORTS -isystem D:\\AndroidDevelop\\android-sdk\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\AndroidDevelop\\android-sdk\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/AndroidProjects/LivePush/app/src/main/cpp/DZLivePush.cpp",
+					"workingDirectory" : "D:/AndroidProjects/LivePush/app/.cxx/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot  -Dlive_push_EXPORTS -isystem D:\\AndroidDevelop\\android-sdk\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\AndroidDevelop\\android-sdk\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/AndroidProjects/LivePush/app/src/main/cpp/DZPacketQueue.cpp",
+					"workingDirectory" : "D:/AndroidProjects/LivePush/app/.cxx/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot  -Dlive_push_EXPORTS -isystem D:\\AndroidDevelop\\android-sdk\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\AndroidDevelop\\android-sdk\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/AndroidProjects/LivePush/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "D:/AndroidProjects/LivePush/app/.cxx/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot -Dlive_push_EXPORTS  -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -DNO_CRYPTO -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProjects/LivePush/app/src/main/cpp/librtmp/amf.c",
+					"workingDirectory" : "D:/AndroidProjects/LivePush/app/.cxx/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot -Dlive_push_EXPORTS  -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -DNO_CRYPTO -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProjects/LivePush/app/src/main/cpp/librtmp/hashswf.c",
+					"workingDirectory" : "D:/AndroidProjects/LivePush/app/.cxx/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot -Dlive_push_EXPORTS  -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -DNO_CRYPTO -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProjects/LivePush/app/src/main/cpp/librtmp/log.c",
+					"workingDirectory" : "D:/AndroidProjects/LivePush/app/.cxx/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot -Dlive_push_EXPORTS  -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -DNO_CRYPTO -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProjects/LivePush/app/src/main/cpp/librtmp/parseurl.c",
+					"workingDirectory" : "D:/AndroidProjects/LivePush/app/.cxx/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot -Dlive_push_EXPORTS  -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -DNO_CRYPTO -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/AndroidProjects/LivePush/app/src/main/cpp/librtmp/rtmp.c",
+					"workingDirectory" : "D:/AndroidProjects/LivePush/app/.cxx/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "D:/AndroidProjects/LivePush/app/build/intermediates/cmake/debug/obj/arm64-v8a/liblive-push.so",
+			"toolchain" : "2315657635"
+		}
+	},
+	"toolchains" : 
+	{
+		"2315657635" : 
+		{
+			"cCompilerExecutable" : "D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}
