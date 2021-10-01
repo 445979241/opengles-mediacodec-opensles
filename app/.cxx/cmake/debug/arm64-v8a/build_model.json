@@ -46,7 +46,7 @@
     "buildTargetSet": []
   },
   "abi": "ARM64_V8A",
-  "abiPlatformVersion": 16,
+  "abiPlatformVersion": 21,
   "cxxBuildFolder": "D:\\AndroidProjects\\LivePush\\app\\.cxx\\cmake\\debug\\arm64-v8a",
   "jsonFile": "D:\\AndroidProjects\\LivePush\\app\\.cxx\\cmake\\debug\\arm64-v8a\\android_gradle_build.json",
   "gradleBuildOutputFolder": "D:\\AndroidProjects\\LivePush\\app\\.cxx\\cxx\\debug\\arm64-v8a",

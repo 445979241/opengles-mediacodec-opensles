@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "D:\\AndroidProjects\\LivePush\\app\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "D:\\AndroidDevelop\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProjects\\LivePush\\app\\.cxx\\cmake\\debug\\armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "music-player-Debug-armeabi-v7a": {
+      "artifactName": "music-player",
+      "buildCommand": "D:\\AndroidDevelop\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidProjects\\LivePush\\app\\.cxx\\cmake\\debug\\armeabi-v7a --target music-player",
+      "abi": "armeabi-v7a",
+      "output": "D:\\AndroidProjects\\LivePush\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\\libmusic-player.so"
+    }
+  }
+}

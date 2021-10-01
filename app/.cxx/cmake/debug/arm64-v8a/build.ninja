@@ -30,94 +30,36 @@ ninja_required_version = 1.5
 include rules.ninja
 
 # =============================================================================
-# Object build statements for SHARED_LIBRARY target live-push
+# Object build statements for SHARED_LIBRARY target video-record
 
-build CMakeFiles/live-push.dir/src/main/cpp/DZJNICall.cpp.o: CXX_COMPILER__live-push ../../../../src/main/cpp/DZJNICall.cpp
-  DEFINES = -Dlive_push_EXPORTS
-  DEP_FILE = CMakeFiles\live-push.dir\src\main\cpp\DZJNICall.cpp.o.d
+build CMakeFiles/video-record.dir/src/main/cpp/native-lib.cpp.o: CXX_COMPILER__video-record ../../../../src/main/cpp/native-lib.cpp
+  DEFINES = -Dvideo_record_EXPORTS
+  DEP_FILE = CMakeFiles\video-record.dir\src\main\cpp\native-lib.cpp.o.d
   FLAGS = -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC
-  INCLUDES = -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/include -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++abi/include
-  IN_ABS = D:\AndroidProjects\LivePush\app\src\main\cpp\DZJNICall.cpp
-  OBJECT_DIR = CMakeFiles\live-push.dir
-  OBJECT_FILE_DIR = CMakeFiles\live-push.dir\src\main\cpp
-build CMakeFiles/live-push.dir/src/main/cpp/DZLivePush.cpp.o: CXX_COMPILER__live-push ../../../../src/main/cpp/DZLivePush.cpp
-  DEFINES = -Dlive_push_EXPORTS
-  DEP_FILE = CMakeFiles\live-push.dir\src\main\cpp\DZLivePush.cpp.o.d
-  FLAGS = -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC
-  INCLUDES = -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/include -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++abi/include
-  IN_ABS = D:\AndroidProjects\LivePush\app\src\main\cpp\DZLivePush.cpp
-  OBJECT_DIR = CMakeFiles\live-push.dir
-  OBJECT_FILE_DIR = CMakeFiles\live-push.dir\src\main\cpp
-build CMakeFiles/live-push.dir/src/main/cpp/DZPacketQueue.cpp.o: CXX_COMPILER__live-push ../../../../src/main/cpp/DZPacketQueue.cpp
-  DEFINES = -Dlive_push_EXPORTS
-  DEP_FILE = CMakeFiles\live-push.dir\src\main\cpp\DZPacketQueue.cpp.o.d
-  FLAGS = -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC
-  INCLUDES = -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/include -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++abi/include
-  IN_ABS = D:\AndroidProjects\LivePush\app\src\main\cpp\DZPacketQueue.cpp
-  OBJECT_DIR = CMakeFiles\live-push.dir
-  OBJECT_FILE_DIR = CMakeFiles\live-push.dir\src\main\cpp
-build CMakeFiles/live-push.dir/src/main/cpp/native-lib.cpp.o: CXX_COMPILER__live-push ../../../../src/main/cpp/native-lib.cpp
-  DEFINES = -Dlive_push_EXPORTS
-  DEP_FILE = CMakeFiles\live-push.dir\src\main\cpp\native-lib.cpp.o.d
-  FLAGS = -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC
-  INCLUDES = -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/include -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++abi/include
+  INCLUDES = -I../../../../src/main/jniLibs/include -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/include -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++abi/include
   IN_ABS = D:\AndroidProjects\LivePush\app\src\main\cpp\native-lib.cpp
-  OBJECT_DIR = CMakeFiles\live-push.dir
-  OBJECT_FILE_DIR = CMakeFiles\live-push.dir\src\main\cpp
-build CMakeFiles/live-push.dir/src/main/cpp/librtmp/amf.c.o: C_COMPILER__live-push ../../../../src/main/cpp/librtmp/amf.c
-  DEFINES = -Dlive_push_EXPORTS
-  DEP_FILE = CMakeFiles\live-push.dir\src\main\cpp\librtmp\amf.c.o.d
-  FLAGS = -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -DNO_CRYPTO -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = D:\AndroidProjects\LivePush\app\src\main\cpp\librtmp\amf.c
-  OBJECT_DIR = CMakeFiles\live-push.dir
-  OBJECT_FILE_DIR = CMakeFiles\live-push.dir\src\main\cpp\librtmp
-build CMakeFiles/live-push.dir/src/main/cpp/librtmp/hashswf.c.o: C_COMPILER__live-push ../../../../src/main/cpp/librtmp/hashswf.c
-  DEFINES = -Dlive_push_EXPORTS
-  DEP_FILE = CMakeFiles\live-push.dir\src\main\cpp\librtmp\hashswf.c.o.d
-  FLAGS = -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -DNO_CRYPTO -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = D:\AndroidProjects\LivePush\app\src\main\cpp\librtmp\hashswf.c
-  OBJECT_DIR = CMakeFiles\live-push.dir
-  OBJECT_FILE_DIR = CMakeFiles\live-push.dir\src\main\cpp\librtmp
-build CMakeFiles/live-push.dir/src/main/cpp/librtmp/log.c.o: C_COMPILER__live-push ../../../../src/main/cpp/librtmp/log.c
-  DEFINES = -Dlive_push_EXPORTS
-  DEP_FILE = CMakeFiles\live-push.dir\src\main\cpp\librtmp\log.c.o.d
-  FLAGS = -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -DNO_CRYPTO -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = D:\AndroidProjects\LivePush\app\src\main\cpp\librtmp\log.c
-  OBJECT_DIR = CMakeFiles\live-push.dir
-  OBJECT_FILE_DIR = CMakeFiles\live-push.dir\src\main\cpp\librtmp
-build CMakeFiles/live-push.dir/src/main/cpp/librtmp/parseurl.c.o: C_COMPILER__live-push ../../../../src/main/cpp/librtmp/parseurl.c
-  DEFINES = -Dlive_push_EXPORTS
-  DEP_FILE = CMakeFiles\live-push.dir\src\main\cpp\librtmp\parseurl.c.o.d
-  FLAGS = -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -DNO_CRYPTO -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = D:\AndroidProjects\LivePush\app\src\main\cpp\librtmp\parseurl.c
-  OBJECT_DIR = CMakeFiles\live-push.dir
-  OBJECT_FILE_DIR = CMakeFiles\live-push.dir\src\main\cpp\librtmp
-build CMakeFiles/live-push.dir/src/main/cpp/librtmp/rtmp.c.o: C_COMPILER__live-push ../../../../src/main/cpp/librtmp/rtmp.c
-  DEFINES = -Dlive_push_EXPORTS
-  DEP_FILE = CMakeFiles\live-push.dir\src\main\cpp\librtmp\rtmp.c.o.d
-  FLAGS = -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -DNO_CRYPTO -O0 -fno-limit-debug-info  -fPIC
-  IN_ABS = D:\AndroidProjects\LivePush\app\src\main\cpp\librtmp\rtmp.c
-  OBJECT_DIR = CMakeFiles\live-push.dir
-  OBJECT_FILE_DIR = CMakeFiles\live-push.dir\src\main\cpp\librtmp
+  OBJECT_DIR = CMakeFiles\video-record.dir
+  OBJECT_FILE_DIR = CMakeFiles\video-record.dir\src\main\cpp
 
 # =============================================================================
-# Link build statements for SHARED_LIBRARY target live-push
+# Link build statements for SHARED_LIBRARY target video-record
 
 
 #############################################
-# Link the shared library ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\liblive-push.so
+# Link the shared library ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\libvideo-record.so
 
-build ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/liblive-push.so: CXX_SHARED_LIBRARY_LINKER__live-push CMakeFiles/live-push.dir/src/main/cpp/DZJNICall.cpp.o CMakeFiles/live-push.dir/src/main/cpp/DZLivePush.cpp.o CMakeFiles/live-push.dir/src/main/cpp/DZPacketQueue.cpp.o CMakeFiles/live-push.dir/src/main/cpp/native-lib.cpp.o CMakeFiles/live-push.dir/src/main/cpp/librtmp/amf.c.o CMakeFiles/live-push.dir/src/main/cpp/librtmp/hashswf.c.o CMakeFiles/live-push.dir/src/main/cpp/librtmp/log.c.o CMakeFiles/live-push.dir/src/main/cpp/librtmp/parseurl.c.o CMakeFiles/live-push.dir/src/main/cpp/librtmp/rtmp.c.o
+build ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libvideo-record.so: CXX_SHARED_LIBRARY_LINKER__video-record CMakeFiles/video-record.dir/src/main/cpp/native-lib.cpp.o
   LANGUAGE_COMPILE_FLAGS = -isystem D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -nostdlib++ --sysroot D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/platforms/android-21/arch-arm64 -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -LD:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/libs/arm64-v8a -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now
-  LINK_LIBRARIES = -landroid -lOpenSLES -llog -latomic -lm "D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/libs/arm64-v8a/libc++_static.a" "D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/libs/arm64-v8a/libc++abi.a"
-  OBJECT_DIR = CMakeFiles\live-push.dir
+  LINK_LIBRARIES = -lavcodec -lavfilter -lavformat -lavutil -lpostproc -lswresample -lswscale -lmusic-player -landroid -lOpenSLES -llog -latomic -lm "D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/libs/arm64-v8a/libc++_static.a" "D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/libs/arm64-v8a/libc++abi.a"
+  LINK_PATH = -LD:/AndroidProjects/LivePush/app/src/main/jniLibs/arm64-v8a
+  OBJECT_DIR = CMakeFiles\video-record.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  SONAME = liblive-push.so
+  SONAME = libvideo-record.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\liblive-push.so
-  TARGET_PDB = live-push.so.dbg
+  TARGET_FILE = ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\libvideo-record.so
+  TARGET_PDB = video-record.so.dbg
 
 #############################################
 # Utility command for edit_cache
@@ -140,8 +82,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build liblive-push.so: phony ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/liblive-push.so
-build live-push: phony ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/liblive-push.so
+build libvideo-record.so: phony ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libvideo-record.so
+build video-record: phony ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libvideo-record.so
 # =============================================================================
 # Folder targets.
 
@@ -153,7 +95,7 @@ build live-push: phony ../../../../build/intermediates/cmake/debug/obj/arm64-v8a
 #############################################
 # The main all target.
 
-build all: phony ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/liblive-push.so
+build all: phony ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libvideo-record.so
 
 #############################################
 # Make the all target the default.

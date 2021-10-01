@@ -1,0 +1,3 @@
+D:/AndroidProjects/LivePush/app/.cxx/cmake/debug/x86/CMakeFiles/music-player.dir
+D:/AndroidProjects/LivePush/app/.cxx/cmake/debug/x86/CMakeFiles/edit_cache.dir
+D:/AndroidProjects/LivePush/app/.cxx/cmake/debug/x86/CMakeFiles/rebuild_cache.dir

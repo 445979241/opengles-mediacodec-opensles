@@ -8,8 +8,11 @@ import javax.microedition.khronos.egl.EGLContext;
 
 public class DefaultVideoRecorder extends BaseVideoRecorder{
 
-    public DefaultVideoRecorder(Context context, EGLContext eglContext, int textureId){
+    public DefaultVideoRecorder(Context context, EGLContext eglContext){
         super(context,eglContext);
-        setRender(new RecorderRenderer(context,textureId));
+    }
+
+    public void setRenderId(int textureId){
+        setRender(new RecorderRenderer(super.mContext,textureId));
     }
 }

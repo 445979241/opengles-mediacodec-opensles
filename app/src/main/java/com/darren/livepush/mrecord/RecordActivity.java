@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 import com.darren.livepush.R;
 import com.darren.livepush.camera.widget.CameraFocusView;
@@ -16,6 +17,7 @@ public class RecordActivity extends AppCompatActivity {
     private DefaultVideoRecorder mVideoRecorder;
     private CameraFocusView mFocusView;
     private RecordProgressButton mRecordButton;
+    private String TAG = "RecordActivity";
 
 
     @Override
@@ -29,21 +31,32 @@ public class RecordActivity extends AppCompatActivity {
         mRecordButton = findViewById(R.id.record);
         mRecordButton.setMaxProgress(60 * 1000);//最大60秒
 
+
+//        mVideoRecorder.startRecord();
+
+
         mRecordButton.setOnRecordListener(new RecordProgressButton.RecordListener() {
             @Override
             public void onStart() {
 
                 String outPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/live_pusher.mp4";
-                String audioPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/01.mp4";
+                String audioPath = Environment.getExternalStorageDirectory().getAbsolutePath()+"/yue.mp3";
 
-                mVideoRecorder = new DefaultVideoRecorder(RecordActivity.this,mCameraView.getEglContext(),mCameraView.getTextureId());
-                mVideoRecorder.initVideoParams(audioPath,outPath,720,1280);
+                mVideoRecorder = new DefaultVideoRecorder(RecordActivity.this,mCameraView.getEglContext());
+                mVideoRecorder.initMediaParams(audioPath,outPath,720,1280);
+
+                // getTextureId获取会有延后，所以需要在这里设置
+                int textureId = mCameraView.getTextureId();
+                Log.e(TAG, "onStart，textureId="+textureId);
+
+                mVideoRecorder.setRenderId(textureId);
                 mVideoRecorder.setRecordInfoListener(new BaseVideoRecorder.RecordInfoListener() {
                     @Override
                     public void onTime(long times) {
                         mRecordButton.setCurrentProgress((int)times);
                     }
                 });
+
                 mVideoRecorder.startRecord();
             }
 

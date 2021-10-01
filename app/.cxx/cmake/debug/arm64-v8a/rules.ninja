@@ -12,19 +12,9 @@
 # =============================================================================
 
 #############################################
-# Rule for compiling C files.
-
-rule C_COMPILER__live-push
-  depfile = $DEP_FILE
-  deps = gcc
-  command = D:\AndroidDevelop\android-sdk\ndk\18.1.5063045\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $IN_ABS
-  description = Building C object $out
-
-
-#############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__live-push
+rule CXX_COMPILER__video-record
   depfile = $DEP_FILE
   deps = gcc
   command = D:\AndroidDevelop\android-sdk\ndk\18.1.5063045\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $IN_ABS
@@ -34,7 +24,7 @@ rule CXX_COMPILER__live-push
 #############################################
 # Rule for linking CXX shared library.
 
-rule CXX_SHARED_LIBRARY_LINKER__live-push
+rule CXX_SHARED_LIBRARY_LINKER__video-record
   command = cmd.exe /C "$PRE_LINK && D:\AndroidDevelop\android-sdk\ndk\18.1.5063045\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/AndroidDevelop/android-sdk/ndk/18.1.5063045/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
